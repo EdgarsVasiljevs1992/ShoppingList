@@ -9,23 +9,23 @@
 /* Begin PBXBuildFile section */
 		8C5D9C5B2745357200074D91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D9C5A2745357200074D91 /* AppDelegate.swift */; };
 		8C5D9C5D2745357200074D91 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D9C5C2745357200074D91 /* SceneDelegate.swift */; };
-		8C5D9C5F2745357200074D91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D9C5E2745357200074D91 /* ViewController.swift */; };
 		8C5D9C622745357200074D91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C5D9C602745357200074D91 /* Main.storyboard */; };
 		8C5D9C652745357200074D91 /* ShoppingList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D9C632745357200074D91 /* ShoppingList.xcdatamodeld */; };
 		8C5D9C672745357400074D91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C5D9C662745357400074D91 /* Assets.xcassets */; };
 		8C5D9C6A2745357400074D91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C5D9C682745357400074D91 /* LaunchScreen.storyboard */; };
+		8C5D9C742745362400074D91 /* ShoppingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D9C732745362400074D91 /* ShoppingTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8C5D9C572745357200074D91 /* ShoppingList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C5D9C5A2745357200074D91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C5D9C5C2745357200074D91 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8C5D9C5E2745357200074D91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8C5D9C612745357200074D91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8C5D9C642745357200074D91 /* ShoppingList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShoppingList.xcdatamodel; sourceTree = "<group>"; };
 		8C5D9C662745357400074D91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C5D9C692745357400074D91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C5D9C6B2745357400074D91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C5D9C732745362400074D91 /* ShoppingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +58,8 @@
 		8C5D9C592745357200074D91 /* ShoppingList */ = {
 			isa = PBXGroup;
 			children = (
-				8C5D9C5A2745357200074D91 /* AppDelegate.swift */,
-				8C5D9C5C2745357200074D91 /* SceneDelegate.swift */,
-				8C5D9C5E2745357200074D91 /* ViewController.swift */,
+				8C5D9C71274535EB00074D91 /* AppDelegate */,
+				8C5D9C722745360600074D91 /* Controller */,
 				8C5D9C602745357200074D91 /* Main.storyboard */,
 				8C5D9C662745357400074D91 /* Assets.xcassets */,
 				8C5D9C682745357400074D91 /* LaunchScreen.storyboard */,
@@ -68,6 +67,23 @@
 				8C5D9C632745357200074D91 /* ShoppingList.xcdatamodeld */,
 			);
 			path = ShoppingList;
+			sourceTree = "<group>";
+		};
+		8C5D9C71274535EB00074D91 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				8C5D9C5A2745357200074D91 /* AppDelegate.swift */,
+				8C5D9C5C2745357200074D91 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		8C5D9C722745360600074D91 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8C5D9C732745362400074D91 /* ShoppingTableViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +157,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C5D9C5F2745357200074D91 /* ViewController.swift in Sources */,
 				8C5D9C652745357200074D91 /* ShoppingList.xcdatamodeld in Sources */,
 				8C5D9C5B2745357200074D91 /* AppDelegate.swift in Sources */,
+				8C5D9C742745362400074D91 /* ShoppingTableViewController.swift in Sources */,
 				8C5D9C5D2745357200074D91 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,7 +321,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = bootcamp.ShoppingList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -333,7 +349,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = bootcamp.ShoppingList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
